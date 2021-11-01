@@ -7,7 +7,12 @@ const apiEndpoint = apiUrl + "/v3/forgot_password";
 
 export function forgot(emailId) {
     return http.post(apiEndpoint, {
-        emailId
+        emailId,
+        method: "POST",
+    headers: {
+        "Content-Type":"application/json"
+    },
+        body: 'moto=${this.state.moto}'
     }
     );
 

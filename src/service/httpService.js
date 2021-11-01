@@ -3,7 +3,21 @@ import { toast } from "react-toastify";
 import logger from "./logService";
 
 
-//axios.defaults.headers['Content-Type'] = 'text/plain';
+// axios.post("http://localhost:8080/api", {
+//     withCredentials: true,
+//     headers: {
+//       "Accept": "application/json",
+//       "Content-Type": "application/json"
+//     }
+//   },{
+//     auth: {
+//       emailId: "emailId",
+//       password: "password"
+//   }}).then(function(response) {
+//     console.log('Authenticated');
+//   }).catch(function(error) {
+//     console.log('Error on Authentication');
+//   });
 
  
 axios.interceptors.response.use(null, error => {

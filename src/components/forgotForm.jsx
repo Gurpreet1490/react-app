@@ -2,11 +2,10 @@ import React  from 'react';
 import Form from "./commons/form";
 import Joi from 'joi-browser';
 import * as forgotService from '../service/forgotService';
-import axios from 'axios';
-
 
 
 class ForgotForm extends Form {
+
     state = {
         data: { emailId: ''},
         errors: {}
@@ -35,7 +34,7 @@ class ForgotForm extends Form {
          return (<div>
              <h1>Forgot Password</h1>
              <form onSubmit={this.handleSubmit}>
-                {this.renderInput('emailId', 'EmailId')}
+                {this.renderInput('emailId', 'emailId')}
                 {this.renderButton("Submit")}
              </form>
          </div>
